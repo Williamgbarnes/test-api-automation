@@ -1,4 +1,4 @@
-FROM node:7.8-slim
+FROM node:carbon
 
 # app workdir
 WORKDIR /app
@@ -12,6 +12,8 @@ RUN npm --allow-root install
 
 # build app source code
 COPY . ./
+
+RUN chmod +x entrypoint.sh
 
 # runtime configs
 ENTRYPOINT ["./entrypoint.sh"]
