@@ -1,7 +1,7 @@
 var should = require('chai').should(),
     expect = require('chai').expect,
     supertest = require('supertest'),
-    api = supertest('http://192.168.114.88:3000');
+    api = supertest('http://192.168.114.:3000');
 
 describe('User', function () {
 
