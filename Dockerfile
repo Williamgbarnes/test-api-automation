@@ -13,7 +13,9 @@ RUN npm --allow-root install
 # build app source code
 COPY . ./
 
+RUN ls -l
 RUN chmod +x entrypoint.sh
+RUN ls -l
 
 # runtime configs
 ENTRYPOINT ["./entrypoint.sh"]
