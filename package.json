@@ -13,9 +13,5 @@
     },
     "scripts": {
         "start": "JUNIT_REPORT_PATH=test-result/result.xml JUNIT_REPORT_STACK=1 mocha --timeout 25000 --colors --reporter mocha-jenkins-reporter || true"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@git.avtecinc.com:Avtecinc/test-api-automation.git"
     }
 }
